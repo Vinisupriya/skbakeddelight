@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #e75480;
+}
+
+h2 {
+  color: #b03060;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: square;
+  color: #444;
+  font-size: 18px;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+  font-size: 0; /* removes inline spacing */
+}
+
+.gallery img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: initial; /* reset font size */
+  border-radius: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #e75480;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #b03060;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #902050;
+}
+nav {
+  background-color: #fff0f5;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #b03060;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #902050;
+}
+
+button:hover {
+  background-color: #c4416f;
+}
+
+img {
+  display: block; /* Makes image a block element to control alignment */
+  margin: 20px auto; /* Adds space top/bottom and centers horizontally */
+  max-width: 100%; /* Makes image responsive, never wider than container */
+  height: auto; /* Keeps aspect ratio */
+  border-radius: 12px; /* Rounded corners */
+}
+.footer {
+  text-align: center;
+  background-color: #fff0f5;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between icons */
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  width: 30px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+}
+.bestsellers {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* so it adjusts on small screens */
+  color: #4b2e2e;
+  font-size: 18px;
+}

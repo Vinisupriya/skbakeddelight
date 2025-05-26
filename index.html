@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvebee Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1 id="home">Welcome to Sk's Baked Delight!</h1>
+    <p>Freshly baked goodies just for you 🍰</p>
+    <h2 id="menu">Our Bestsellers</h2>
+    <div class="bestsellers">
+      <span>Chocolate Fudge Cake</span>
+      <span>Vanilla Cupcakes</span>
+      <span>Eggless Brownies</span>
+      <span>Red Velvet Pastry</span>
+    </div>
+
+    <h2 id="gallery">Gallery</h2>
+    <div class="gallery">
+      <img src="cake1.jpg" alt="Chocolate Cake" />
+      <img src="cupcake.jpg" alt="Vanilla Cupcake" />
+      <img src="brownie.jpg" alt="Brownie" />
+    </div>
+    <h2 id="contact">Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <button onclick="orderNow()">Order Now</button>
+
+    <script src="script.js"></script>
+  </body>
+  <footer class="footer">
+    <p>© 2025 Suvebee's Bakery</p>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/sksbakeddelight/" target="_blank">
+        <img src="instagram.png" alt="Instagram" /> </a
+      ><br />
+      <a href="https://wa.me/918489573264" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp" /> </a
+      ><br />
+      <a href="mailto:suvebee@gmail.com">
+        <img src="email.png" alt="Email" />
+      </a>
+    </div>
+  </footer>
+</html>
