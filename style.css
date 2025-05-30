@@ -282,18 +282,53 @@ img {
   color: #4b2e2e;
   font-size: 18px;
 }
+
+/* MOBILE FIXES */
 @media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   .logo {
-    width: 90px;
-    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 10px;
   }
+
+  .bestsellers span {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .gallery img {
-    max-width: 100px; /* smaller on small screens */
+    width: 90%;
+    margin: 10px 0;
   }
-}
-.logo {
-  height: auto;
-  width: 120px;
-  max-width: 100%;
-  display: block;
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
 }
