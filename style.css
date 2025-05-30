@@ -228,7 +228,10 @@ img {
   border-radius: 12px; /* Rounded corners */
 }
 .hero {
-  background: url("logo.jpg") no-repeat center center/cover;
+  background: url("logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* or use 'cover' */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -279,19 +282,8 @@ img {
   color: #4b2e2e;
   font-size: 18px;
 }
-
 @media (max-width: 600px) {
-  .logo {
-    height: 35px;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
+  .gallery img {
+    max-width: 100px; /* smaller on small screens */
   }
 }
