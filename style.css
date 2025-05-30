@@ -283,11 +283,17 @@ img {
   font-size: 18px;
 }
 @media (max-width: 600px) {
+  .logo {
+    width: 90px;
+    margin: 0 auto;
+  }
   .gallery img {
     max-width: 100px; /* smaller on small screens */
   }
 }
 .logo {
-  max-width: 100%;
   height: auto;
+  width: 120px;
+  max-width: 100%;
+  display: block;
 }
