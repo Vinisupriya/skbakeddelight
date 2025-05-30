@@ -189,6 +189,18 @@ nav {
   font-weight: bold;
   font-size: 16px;
 }
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
 button:hover {
   background-color: #c4416f;
 }
@@ -267,8 +279,19 @@ img {
   color: #4b2e2e;
   font-size: 18px;
 }
+
 @media (max-width: 600px) {
-  .gallery img {
-    max-width: 100px; /* smaller on small screens */
+  .logo {
+    height: 35px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
